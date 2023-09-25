@@ -1,6 +1,5 @@
 package function_interface.examples;
 
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
@@ -18,8 +17,8 @@ public class PredicateExample {
         Predicate<String> maisDeCincoCaracteres = palavra -> palavra.length() > 5;
 
         palavras.stream()
-        .filter(maisDeCincoCaracteres)
-        .forEach(System.out::println);
+                .filter(maisDeCincoCaracteres)
+                .forEach(System.out::println);
     }
-    
+
 }
